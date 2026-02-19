@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "exercise_id": "construct_functional_sequence_in_tonality",
+  "title": "Construct functional sequence in tonality",
+  "domain": "Harmony",
+  "type": "staff_entry",
+  "description": "Build a sequence of functions/degrees inside the specified tonality.",
+  "levels": [
+    {
+      "level_id": "L1",
+      "label": "Up to 1 accidental",
+      "key_scope": { "system": "major", "max_accidentals": 1 },
+      "range": { "clef": "treble", "low": "C3", "high": "C6" },
+      "time_sig": "4/4",
+      "instrument_scope": { "allowed": ["piano"] },
+      "modes": { "direction": "up" },
+      "grading": { "pitch": "pitch_class", "rhythm": "ignore", "chord_match": "set" }
+    },
+    {
+      "level_id": "L2",
+      "label": "Up to 3 accidentals",
+      "key_scope": { "system": "major", "max_accidentals": 3 },
+      "range": { "clef": "treble", "low": "C3", "high": "C6" },
+      "time_sig": "4/4",
+      "instrument_scope": { "allowed": ["piano"] },
+      "modes": { "direction": "up" },
+      "grading": { "pitch": "pitch_class", "rhythm": "ignore", "chord_match": "set" }
+    }
+  ],
+  "generator": {
+    "kind": "construct_functional_sequence",
+    "params": { "progressions": [["I", "IV", "V"]], "voicing": "close" }
+  },
+  "ui": { "allow_play_reference": true, "allow_play_expected": true }
+}

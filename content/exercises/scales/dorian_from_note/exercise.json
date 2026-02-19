@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "exercise_id": "construct_modal_scale_system_from_root",
+  "title": "Construct modal/scale system from root",
+  "domain": "Scales",
+  "type": "staff_entry",
+  "description": "Build an ordered modal pitch collection from a root and direction.",
+  "levels": [
+    {
+      "level_id": "L1",
+      "label": "Up to 2 accidentals",
+      "key_scope": { "system": "major", "max_accidentals": 2 },
+      "range": { "clef": "treble", "low": "C3", "high": "C6" },
+      "instrument_scope": { "allowed": ["piano"] },
+      "modes": { "direction": "up" },
+      "grading": { "pitch": "pitch_class", "rhythm": "ignore", "chord_match": "set" }
+    }
+  ],
+  "generator": { "kind": "construct_modal_system", "params": { "mode": "dorian", "direction": "up" } },
+  "ui": { "allow_play_reference": true, "allow_play_expected": true }
+}
