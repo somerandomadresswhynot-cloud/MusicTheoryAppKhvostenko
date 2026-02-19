@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "exercise_id": "audiation_harmonic_structure",
+  "title": "Audiation of harmonic structure",
+  "domain": "Singing",
+  "type": "self_grade",
+  "description": "Hear/visualize internally and reproduce a harmonic structure vocally from a reference pitch.",
+  "levels": [
+    {
+      "level_id": "L1",
+      "label": "All keys",
+      "key_scope": { "system": "major", "max_accidentals": 7 },
+      "range": { "clef": "treble", "low": "C3", "high": "C6" },
+      "instrument_scope": { "allowed": ["piano"] },
+      "grading": { "pitch": "self_grade", "rhythm": "ignore", "chord_match": "set" }
+    }
+  ],
+  "generator": {
+    "kind": "audiation_harmonic_structure",
+    "params": {
+      "template": "Sing major 7th chord (2nd inversion) up from {note}",
+      "grade_map": { "didnt_get": "again", "got_after_thinking": "hard", "did_get": "good" }
+    }
+  },
+  "ui": { "allow_play_reference": true, "allow_play_expected": true }
+}

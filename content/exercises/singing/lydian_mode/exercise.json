@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "exercise_id": "audiation_scalar_modal_system",
+  "title": "Audiation of scalar/modal system",
+  "domain": "Singing",
+  "type": "self_grade",
+  "description": "Hear/visualize internally and reproduce a scalar/modal system vocally from a reference pitch.",
+  "levels": [
+    {
+      "level_id": "L1",
+      "label": "C Lydian only",
+      "key_scope": { "system": "major", "max_accidentals": 0 },
+      "range": { "clef": "treble", "low": "C3", "high": "C6" },
+      "instrument_scope": { "allowed": ["piano"] },
+      "grading": { "pitch": "self_grade", "rhythm": "ignore", "chord_match": "set" }
+    },
+    {
+      "level_id": "L2",
+      "label": "Up to 2 accidentals",
+      "key_scope": { "system": "major", "max_accidentals": 2 },
+      "range": { "clef": "treble", "low": "C3", "high": "C6" },
+      "instrument_scope": { "allowed": ["piano"] },
+      "grading": { "pitch": "self_grade", "rhythm": "ignore", "chord_match": "set" }
+    }
+  ],
+  "generator": {
+    "kind": "audiation_scalar_modal_system",
+    "params": {
+      "template": "Sing Lydian mode up from {note}",
+      "grade_map": { "didnt_get": "again", "got_after_thinking": "hard", "did_get": "good" }
+    }
+  },
+  "ui": { "allow_play_reference": true, "allow_play_expected": true }
+}

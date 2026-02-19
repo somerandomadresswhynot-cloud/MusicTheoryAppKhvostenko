@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "exercise_id": "resolve_tension_within_tonality",
+  "title": "Resolve tension within tonality",
+  "domain": "Harmony",
+  "type": "staff_entry",
+  "description": "Given a dissonant tritone in key context, produce the expected tendency resolution.",
+  "levels": [
+    {
+      "level_id": "L1",
+      "label": "Major keys to 3 accidentals",
+      "key_scope": { "system": "major", "max_accidentals": 3 },
+      "range": { "clef": "treble", "low": "C3", "high": "C6" },
+      "instrument_scope": { "allowed": ["piano"] },
+      "modes": { "self_grade_optional": true },
+      "grading": { "pitch": "pitch_class", "rhythm": "ignore", "chord_match": "set" }
+    }
+  ],
+  "generator": { "kind": "resolve_tension", "params": {} },
+  "ui": { "allow_play_reference": true, "allow_play_expected": true }
+}

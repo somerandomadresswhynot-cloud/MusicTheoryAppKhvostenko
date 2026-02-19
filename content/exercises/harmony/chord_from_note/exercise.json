@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "exercise_id": "construct_structure_from_root",
+  "title": "Construct structure from root",
+  "domain": "Harmony",
+  "type": "staff_entry",
+  "description": "Build a defined harmonic structure from a starting note and direction.",
+  "levels": [
+    {
+      "level_id": "L1",
+      "label": "0-1 accidentals",
+      "key_scope": { "system": "major", "max_accidentals": 1 },
+      "range": { "clef": "treble", "low": "C3", "high": "C6" },
+      "time_sig": "4/4",
+      "instrument_scope": { "allowed": ["piano"] },
+      "modes": { "direction": "up", "self_grade_optional": true },
+      "grading": { "pitch": "pitch_class", "rhythm": "ignore", "chord_match": "set" }
+    }
+  ],
+  "generator": {
+    "kind": "construct_structure_from_root",
+    "params": { "structure_type": "major_triad", "direction": "up" }
+  },
+  "ui": { "allow_play_reference": true, "allow_play_expected": true }
+}
